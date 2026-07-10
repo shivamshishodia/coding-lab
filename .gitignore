@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.iml
+
+# Java/JVM build output
+*.class
+*.jar
+*.war
+*.ear
+target/
+build/
+out/
+bin/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
