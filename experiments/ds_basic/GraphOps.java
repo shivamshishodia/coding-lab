@@ -9,7 +9,7 @@ import java.util.Set;
 
 class Graph<T> {
 
-    private final Map<T, List<T>> adjacency = new HashMap<>();
+    Map<T, List<T>> adjacency = new HashMap<>();
 
     void addVertex(T vertex) {
         adjacency.computeIfAbsent(vertex, key -> new ArrayList<>());
