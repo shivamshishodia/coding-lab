@@ -22,8 +22,9 @@ class Graph<T> {
      * This keeps the vertex count correct and lets BFS/DFS start from it.</p>
      */
     void addDirectedEdge(T from, T to) {
-        adjacency.computeIfAbsent(from, key -> new ArrayList<>()).add(to);
+        addVertex(from);
         addVertex(to);
+        adjacency.get(from).add(to);
     }
 
     void addUndirectedEdge(T first, T second) {
